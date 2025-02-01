@@ -111,7 +111,7 @@ html {
 .btn {
   height: 55px;
   padding: 0 25px;
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-size: 14px;
   font-weight: 500;
   transition: var(--default-transition);
@@ -131,17 +131,42 @@ html {
 
 .section-title {
   max-width: 420px;
-  color: var(--space-cadet);
+  color: #0d1d74;;
   font-size: var(--fs-2);
   font-weight: 600;
 }
 
 .section-text {
-  max-width: 320px;
+  /* max-width: 320px; */
   color: var(--rhythm);
-  font-size: var(--fs-4);
+  font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.5px;
+}
+
+.section-text li strong {
+  font-size: 22px; /* Headline size, normal text theke ekto boro */
+  font-weight: bold; /* Ensure it's bold */
+  color: black;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  background-color: #f5c532;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* margin-top: 10px; */
+  margin-left: 88px;
+}
+
+.add-to-cart ion-icon {
+  font-size: 20px;
+  margin-right: 8px;
 }
 
 
@@ -215,7 +240,7 @@ html {
 }
 
 .nav-link {
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-size: var(--fs-5);
   transition: 0.25s ease;
 }
@@ -251,7 +276,7 @@ html {
   align-items: center;
   padding: 0 7px;
   border-radius: 20px;
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-size: 12px;
   font-weight: 500;
 }
@@ -308,7 +333,7 @@ html {
 .cart-box-ul::-webkit-scrollbar { display: none; }
 
 .cart-h4 {
-  color: var(--space-cadet);
+  color: #0d1d74;
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -337,7 +362,7 @@ html {
 .cart-item:hover .product-img { transform: scale(1.05); }
 
 .cart-item .product-name {
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-size: var(--fs-5);
   font-weight: 600;
   width: calc(100% - 135px);
@@ -345,7 +370,7 @@ html {
 
 .cart-item .product-price {
   background: var(--saffron);
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-weight: 500;
   width:  60px;
   height: 60px;
@@ -394,16 +419,18 @@ html {
 .home-left { text-align: center; }
 
 .home-subtext {
-  background: var(--cultured);
-  color: var(--space-cadet);
-  font-size: 13px;
+  /* background: var(--cultured); */
+  /* color: #0d1d74; */
+  color: #0d1d74;;
+  font-size: 17px;
   display: inline-block;
   padding: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .main-heading {
-  color: var(--space-cadet);
+  /* color: #0d1d74; */
+  color: #ed5d22;
   font-size: var(--fs-1);
   font-weight: 600;
   line-height: 1.1;
@@ -580,13 +607,13 @@ html {
 .number-lg {
   font-size: var(--fs-1);
   font-family: "Monoton", cursive;
-  color: var(--space-cadet);
+  color: #0d1d74;
 }
 
 .text-md {
   font-size: var(--fs-3);
   font-weight: 600;
-  color: var(--space-cadet);
+  color: #0d1d74;
 }
 
 .shape-6 {
@@ -642,7 +669,7 @@ html {
 }
 
 .service-card .card-heading {
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-size: var(--fs-3);
   font-weight: 600;
   letter-spacing: -1px;
@@ -705,12 +732,12 @@ html {
 
 .card-badge.green {
   background: var(--pistachio);
-  color: var(--space-cadet);
+  color: #0d1d74;
 }
 
 .card-badge.red {
   background: var(--red-orange-crayola);
-  color: var(--space-cadet);
+  color: #0d1d74;
 }
 
 .product-card .wrapper {
@@ -723,7 +750,7 @@ html {
 }
 
 .product-card .product-name {
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-size: var(--fs-3);
   font-weight: 600;
   padding-left: 15px;
@@ -736,7 +763,7 @@ html {
   display:         flex;
   justify-content: center;
   align-items:     center;
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-size: 24px;
   font-weight: 500;
 }
@@ -785,7 +812,7 @@ html {
 }
 
 .testimonials-card .card-title {
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -828,7 +855,7 @@ html {
 
 .customer-name {
   font-size: 14px;
-  color: var(--space-cadet);
+  color: #0d1d74;
   font-weight: 600;
 }
 
@@ -841,7 +868,8 @@ html {
 \*-----------------------------------*/
 
 footer {
-  background: var(--space-cadet);
+  background: hsl(249, 98%, 65%);
+  /* background: var(--space-cadet); */
   padding: 50px var(--px);
 }
 
@@ -850,6 +878,7 @@ footer {
   flex-direction: column;
   align-items:    center;
   gap: 30px;
+
 }
 
 .social-link {
@@ -867,7 +896,7 @@ footer {
 
 .copyright {
   font-size: 12px;
-  color: var(--rhythm);
+  color: white;
   text-align: center;
   letter-spacing: 0.5px;
 }
