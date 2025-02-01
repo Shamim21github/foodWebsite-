@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventBites</title>
+
+  <!--
+    - custom css link 
+  -->
+  <link rel="stylesheet" href="./assets/css/foodhub.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <style>
+     .menu-container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .menu-section {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .menu-item {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Adjust spacing */
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu-item img {
+        width: 80px; /* Adjust image size */
+        height: 80px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .menu-text {
+        flex-grow: 1; /* Take available space */
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .price {
+        font-weight: bold;
+        color: #d32f2f;
+    }
+
+    .menu-item a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-wrapper">
+
+          <a href="index.html">
+            <!-- <img src="./assets/images/logo.svg" alt="logo" width="130"> -->
+            <img src="./assets/images/foodBites.png" alt="logo" width="70">
+          </a>
+
+          <ul class="navbar-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="aboutUs.html" class="nav-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Pre Order</a>
+            </li>
+
+
+            <!-- <li>
+              <a href="services" class="nav-link">Services</a>
+            </li>
+
+            
+
+            <li>
+              <a href="testimonials" class="nav-link">Testimonials</a>
+            </li> -->
+
+          </ul>
+
+          <div class="navbar-btn-group">
+
+            <button class="shopping-cart-btn">
+              <img src="./assets/images/cart.svg" alt="shopping cart icon" width="18">
+              <span class="count">5</span>
+            </button>
+
+            <button class="menu-toggle-btn">
+              <span class="line one"></span>
+              <span class="line two"></span>
+              <span class="line three"></span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <div class="cart-box">
+
+        <ul class="cart-box-ul">
+
+          <h4 class="cart-h4">Your order.</h4>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu1.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Saumon gravlax</h5>
+              <p class="product-price">
+                <span class="small">$</span>9
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu2.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Chevrefried with honey</h5>
+              <p class="product-price">
+                <span class="small">$</span>14
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu3.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Crispy fish</h5>
+              <p class="product-price">
+                <span class="small">$</span>4
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu4.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Stracciatella</h5>
+              <p class="product-price">
+                <span class="small">$</span>11
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu5.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Sea bream carpaccio</h5>
+              <p class="product-price">
+                <span class="small">$</span>19
+              </p>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="cart-btn-group">
+          <button class="btn btn-secondary">View order</button>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+
+
+    <main style="background-image: url('./assets/images/menu101.jpg'); background-size: cover; background-position: center;"">
+
+
+        <div class="menu-container" style="margin-top: 140px;color: white !important">
+            <h1 style="color:white !important">Delightful Food for Every Event</h1>
+            <p>At Event Bites, our menu is carefully curated to suit the diverse tastes of event attendees. Each meal is freshly prepared to perfection, ensuring a satisfying experience.</p>
+            
+            <div class="menu-section">
+                <h2>Main Dishes</h2>
+                <div class="menu-item">
+                  <a href="menuDetails1.html?item=chicken-biryani"> 
+                    <img src="./assets/images/menu2.jpg" alt="Chicken Biryani + Kabab">
+                    <div class="menu-text">Chicken Biryani + Kabab</div>
+                  </a>
+                    <div class="price">260 BDT</div>
+                  
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Beef Tehari + Kabab">
+                    <div class="menu-text">Beef Tehari + Kabab</div>
+                  </a>
+                    <div class="price">280 BDT</div>
+                  </a>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Fried Rice + Chicken + Vegetable + Kabab">
+                    <div class="menu-text">Fried Rice + Chicken + Vegetable + Kabab</div>
+                  </a>
+                    <div class="price">300 BDT</div>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Fried Rice + Vegetable + Vegetable Paratha">
+                    <div class="menu-text">Fried Rice + Vegetable + Vegetable Paratha</div>
+                  </a>
+                    <div class="price">300 BDT</div>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Fried Rice + Chicken Masala + Vegetable">
+                    <div class="menu-text">Fried Rice + Chicken Masala + Vegetable</div>
+                  </a>
+                    <div class="price">320 BDT</div>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Beef Khichuri">
+                    <div class="menu-text">Beef Khichuri</div>
+                  </a>
+                    <div class="price">270 BDT</div>
+                </div>
+            </div>
+    
+            <div class="menu-section">
+                <h2>Snacks</h2>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Vegetable Roll">
+                    <div class="menu-text">Vegetable Roll</div>
+                  </a>
+                    <div class="price">70 BDT</div>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Chicken Roll">
+                    <div class="menu-text">Chicken Roll</div>
+                  </a>
+                    <div class="price">100 BDT</div>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Chicken Burger">
+                    <div class="menu-text">Chicken Burger</div>
+                  </a>
+                    <div class="price">150 BDT</div>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Chicken Club Sandwich">
+                    <div class="menu-text">Chicken Club Sandwich</div>
+                  </a>
+                    <div class="price">120 BDT</div>
+                </div>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Fish Fingers (3 pcs)">
+                    <div class="menu-text">Fish Fingers (3 pcs)</div>
+                  </a>
+                    <div class="price">150 BDT</div>
+                </div>
+            </div>
+    
+            <div class="menu-section">
+                <h2>Drinks</h2>
+                <div class="menu-item">
+                  <a href="menuDetails1.html"> 
+                    <img src="./assets/images/menu2.jpg" alt="Drinks">
+                    <div class="menu-text">Coca-Cola, Sprite, and Mineral Water</div>
+                  </a>
+                    <div class="price">Price on Request</div>
+                </div>
+            </div>
+        </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  <!--
+      - #FOOTER
+    -->
+
+  <footer>
+
+    <div class="footer-wrapper">
+
+      <a href="#">
+        <!-- <img src="./assets/images/logo-footer.svg" alt="logo" class="footer-brand" width="130"> -->
+        <img src="./assets/images/foodBites.png" alt="logo" width="70">
+      </a>
+
+      <div class="social-link">
+
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+      </div>
+
+      <p class="copyright">&copy; @shamimApon</p>
+
+    </div>
+
+  </footer>
+
+  </div>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/foodhub.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBites</title>
+
+    <!--
+    - custom css link 
+  -->
+    <link rel="stylesheet" href="./assets/css/foodhub.css">
+    <link rel="stylesheet" href="./assets/css/media_query.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--
+    - main container
+  -->
+
+    <div class="container">
+
+        <!--
+      - #HEADER
+    -->
+
+        <header>
+
+            <nav class="navbar">
+
+                <div class="navbar-wrapper">
+
+                    <a href="index.html">
+                        <!-- <img src="./assets/images/logo.svg" alt="logo" width="130"> -->
+                        <img src="./assets/images/foodBites.png" alt="logo" width="70">
+                    </a>
+
+                    <ul class="navbar-nav">
+
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                          </li>
+              
+                          <li>
+                            <a href="aboutUs.html" class="nav-link">About Us</a>
+                          </li>
+              
+                          <li>
+                            <a href="menu.html" class="nav-link">Menu</a>
+                          </li>
+              
+                          <li>
+                            <a href="#" class="nav-link">Pre Order</a>
+                          </li>
+              
+
+                        <!-- <li>
+              <a href="services" class="nav-link">Services</a>
+            </li>
+
+            
+
+            <li>
+              <a href="testimonials" class="nav-link">Testimonials</a>
+            </li> -->
+
+                    </ul>
+
+                    <div class="navbar-btn-group">
+
+                        <button class="shopping-cart-btn">
+                            <img src="./assets/images/cart.svg" alt="shopping cart icon" width="18">
+                            <span class="count">5</span>
+                        </button>
+
+                        <button class="menu-toggle-btn">
+                            <span class="line one"></span>
+                            <span class="line two"></span>
+                            <span class="line three"></span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="cart-box">
+
+                <ul class="cart-box-ul">
+
+                    <h4 class="cart-h4">Your order.</h4>
+
+                    <li>
+                        <a href="#" class="cart-item">
+                            <div class="img-box">
+                                <img src="./assets/images/menu1.jpg" alt="product image" class="product-img" width="50"
+                                    height="50" loading="lazy">
+                            </div>
+
+                            <h5 class="product-name">Saumon gravlax</h5>
+                            <p class="product-price">
+                                <span class="small">$</span>9
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="cart-item">
+                            <div class="img-box">
+                                <img src="./assets/images/menu2.jpg" alt="product image" class="product-img" width="50"
+                                    height="50" loading="lazy">
+                            </div>
+
+                            <h5 class="product-name">Chevrefried with honey</h5>
+                            <p class="product-price">
+                                <span class="small">$</span>14
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="cart-item">
+                            <div class="img-box">
+                                <img src="./assets/images/menu3.jpg" alt="product image" class="product-img" width="50"
+                                    height="50" loading="lazy">
+                            </div>
+
+                            <h5 class="product-name">Crispy fish</h5>
+                            <p class="product-price">
+                                <span class="small">$</span>4
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="cart-item">
+                            <div class="img-box">
+                                <img src="./assets/images/menu4.jpg" alt="product image" class="product-img" width="50"
+                                    height="50" loading="lazy">
+                            </div>
+
+                            <h5 class="product-name">Stracciatella</h5>
+                            <p class="product-price">
+                                <span class="small">$</span>11
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="cart-item">
+                            <div class="img-box">
+                                <img src="./assets/images/menu5.jpg" alt="product image" class="product-img" width="50"
+                                    height="50" loading="lazy">
+                            </div>
+
+                            <h5 class="product-name">Sea bream carpaccio</h5>
+                            <p class="product-price">
+                                <span class="small">$</span>19
+                            </p>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="cart-btn-group">
+                    <button class="btn btn-secondary">View order</button>
+                    <button class="btn btn-primary">Checkout</button>
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+
+
+        <main>
+            <div class="container" style="margin-top:100px">
+                <h2 class="text-center display-5 fw-bold mb-4 text-white">About Us</h2>
+
+
+                <!-- Who We Are -->
+                <div class="row mb-5" id="who-we-are">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm" onclick="highlightCard(this)">
+                            <div class="card-body">
+                                <h3 class="fw-bold mb-3">Who We Are</h3>
+                                <p class="text-dark">
+                                    At Event Bites, we are revolutionizing event catering in Bangladesh. As the
+                                    country’s first-ever event-focused food delivery
+                                    company, we specialize in providing high-quality, fresh, and delicious meals
+                                    tailored to the unique needs of events, expos,
+                                    exhibitions, and fairs.
+                                    Born out of the need to solve common food challenges faced by event organizers, we
+                                    are dedicated to delivering exceptional
+                                    catering experiences. Whether it’s for small team gatherings or large-scale fairs,
+                                    our seamless ordering process and on-time
+                                    delivery ensure that your focus stays on running a successful event while we take
+                                    care of the food.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Mission -->
+                <div class="row mb-5" id="our-mission">
+                    <div class="col-lg-6 ms-auto text-end">
+                        <div class="card border-0 shadow-sm" onclick="highlightCard(this)">
+                            <div class="card-body">
+                                <h3 class="fw-bold mb-3">Our Mission</h3>
+                                <p class="text-dark">
+                                    Our mission is simple yet impactful:
+                                    "To redefine the catering experience for events by delivering fresh, quality meals
+                                    with unmatched convenience and
+                                    reliability."
+                                    We aim to eliminate the stress of event food logistics by offering dependable
+                                    service, delicious food, and a customer-first
+                                    approach.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Vision -->
+                <div class="row mb-5" id="our-vision">
+                    <div class="col-lg-6 ms-auto text-end">
+                        <div class="card border-0 shadow-sm" onclick="highlightCard(this)">
+                            <div class="card-body">
+                                <h3 class="fw-bold mb-3">Our vision</h3>
+                                <p class="text-dark">
+                                    At Event Bites, our vision is to become:
+                                    "Bangladesh’s most trusted event catering partner, known for our innovation,
+                                    reliability, and excellence in food
+                                    quality."
+                                    We strive to set new standards in the industry, ensuring every event we serve is
+                                    remembered for its seamless food
+                                    experience.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How We Work -->
+                <div class="row" id="how-we-work">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm" onclick="highlightCard(this)">
+                            <div class="card-body">
+                                <h3 class="fw-bold mb-3">How We Work</h3>
+                                <ol class="list-unstyled">
+                                    <li><strong>1. Quality First:</strong> We prioritize fresh, hygienic, and flavorful
+                                        food for every order</li>
+                                    <li><strong>2. Customer Focus:</strong> We design our services to simplify your
+                                        event planning, offering flexible and reliable solutions tailored
+                                        to your needs</li>
+                                    <li><strong>3. Innovation:</strong> As the pioneers of event-focused food delivery
+                                        in Bangladesh, we’re committed to staying ahead with
+                                        creative ideas and streamlined processes.
+                                    </li>
+                                    <li><strong>4. Timeliness:</strong> We understand the importance of time in events,
+                                        and our team ensures prompt delivery that aligns with
+                                        your schedule
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-5">
+                    <!-- Our Journey -->
+                    <div class="row" id="our-journey">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="fw-bold mb-3">Our Journey</h3>
+                                    <p>What started as a small idea to address the challenges of event food availability
+                                        has grown into a trusted name in event catering. From serving intimate
+                                        gatherings to managing large expos, our passion for exceptional service
+                                        continues to drive us forward.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+
+                    <!-- Why Choose Event Bites? -->
+                    <div class="row" id="why-choose">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="fw-bold mb-3">Why Choose Event Bites?</h3>
+                                    <p>At Event Bites, we’re more than just a catering company – we’re your partners in
+                                        creating memorable event experiences. Join us as we continue to serve fresh,
+                                        high-quality food and revolutionize the catering landscape in Bangladesh.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Join Us on Our Journey -->
+                    <div class="row" id="join-us">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="fw-bold mb-3">Join Us on Our Journey</h3>
+                                    <p>👉 Let’s make your next event unforgettable – together!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+                </section>
+
+                <!-- Add Animation with JavaScript -->
+                <script>
+                    // Highlight card on click
+                    function highlightCard(card) {
+                        const cards = document.querySelectorAll('.card');
+                        cards.forEach((c) => {
+                            c.style.backgroundColor = ''; // Reset background color
+                        });
+                        card.style.backgroundColor = '#ed5d22'; // Highlight clicked card
+                    }
+
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const sections = ["who-we-are", "our-mission", "our-vision", "how-we-work", "our-journey", 'why-choose', 'join-us'];
+                        let delay = 0;
+
+                        sections.forEach((section) => {
+                            const element = document.getElementById(section);
+                            element.style.opacity = 0;
+                            element.style.transform = "translateY(20px)";
+                            setTimeout(() => {
+                                element.style.transition = "opacity 1s ease, transform 1s ease";
+                                element.style.opacity = 1;
+                                element.style.transform = "translateY(0)";
+                            }, delay);
+                            delay += 1500; // Delay for each section (1.5 seconds)
+                        });
+                    });
+                </script>
+
+                <!-- Add Custom CSS -->
+                <style>
+                    #about {
+                        position: relative;
+                        color: white;
+                        /* Default text color to white for contrast */
+                    }
+
+                    .card {
+                        transition: background-color 0.3s ease;
+                        /* Smooth transition for background color */
+                    }
+
+                    .card-body {
+                        padding: 20px;
+                        background-color: rgba(255, 255, 255, 0.8);
+                        /* Light background with transparency */
+                    }
+                </style>
+
+
+                <!-- Add Custom CSS -->
+                <style>
+                    .card {
+                        transition: background-color 0.3s ease;
+                        /* Smooth transition for background color */
+                    }
+
+                    .card-body {
+                        padding: 20px;
+                        background-color: #f8f9fa;
+                        /* Light background */
+                    }
+                </style>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+        <!--
+      - #FOOTER
+    -->
+
+        <footer>
+
+            <div class="footer-wrapper">
+
+                <a href="#">
+                    <!-- <img src="./assets/images/logo-footer.svg" alt="logo" class="footer-brand" width="130"> -->
+                    <img src="./assets/images/foodBites.png" alt="logo" width="70">
+                </a>
+
+                <div class="social-link">
+
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+
+                    <a href="#">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+
+                </div>
+
+                <p class="copyright">&copy; @shamimApon</p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/foodhub.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
